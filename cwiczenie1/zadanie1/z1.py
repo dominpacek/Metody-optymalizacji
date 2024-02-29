@@ -3,7 +3,7 @@ import cvxpy as cp
 ###############################
 ## method 1
 ###############################
-x1 = cp.Variable()
+x1 = cp.Variable() 
 x2 = cp.Variable()
 x3 = cp.Variable()
 objective = cp.Minimize(300 * x1 + 500 * x2 + 800 * x3)
