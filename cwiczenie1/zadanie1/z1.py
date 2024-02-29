@@ -1,4 +1,5 @@
 import cvxpy as cp
+import scipy
 
 ###############################
 ## method 1
