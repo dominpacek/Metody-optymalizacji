@@ -1,9 +1,10 @@
+# Ćwiczenie 1 zadanie 1
+# Nina Łabęcka 311339 grupa czwartek 14:15
+# Dominika Pacek 311378 grupa czwartek 18:15
+
 import cvxpy as cp
 import scipy
 
-###############################
-## method 1
-###############################
 x1 = cp.Variable() 
 x2 = cp.Variable()
 x3 = cp.Variable()
