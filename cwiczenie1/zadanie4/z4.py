@@ -51,8 +51,8 @@ print("A: ", A.shape)
 print("Y: ", Y.shape)
 
 c = np.vstack((
-    [0],
-    np.ones((A.shape[1] - 1, 1))
+    [0], [0],
+    np.ones((A.shape[1] - 2, 1))
 ))
 print("c: ", c.shape)
 
@@ -70,7 +70,7 @@ ax[0].set(xticks=np.arange(x[0], x[-1], 5),
 
 ax[1].plot(x, y, 'o', markersize=1, label='Punkty ze zbioru danych', color='red')
 ax[1].plot(x, a_sqrs * np.array(x) + b_sqrs, label='Dopasowana prosta (najm. kwadraty)', color='blue')
-# ax[1].plot(x, a_lp * np.array(x) + b_lp, label='Dopasowana prosta (LP)', color='green')
+ax[1].plot(x, a_lp * np.array(x) + b_lp, label='Dopasowana prosta (LP)', color='green')
 ax[1].set(xlim=(0, 10), ylim=(2, 10))
 ax[1].legend(loc='lower right')
-# plt.show()
+plt.show()
