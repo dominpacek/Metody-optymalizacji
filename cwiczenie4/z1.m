@@ -1,3 +1,8 @@
+% Metody optymalizacji - moduł 4
+% Zadanie 1
+% Nina Łabęcka 311339 grupa czwartek 14:15
+% Dominika Pacek 311378 grupa czwartek 18:15
+
 clear all
 close all
 clc
@@ -86,14 +91,19 @@ for i = 1:s
 end 
 
 % czerwony marker - źródło sygnału
-% czarne markery - sensory
+% biało-czarne markery - sensory
 figure
 contourf(X, Y, Z, 200);
 hold on
 scatter3(z(1), z(2), 0, 'r', 'filled');
-scatter3(y1(1), y1(2), 0, 'black', 'filled')
-scatter3(y2(1), y2(2), 0, 'black', 'filled')
-scatter3(y3(1), y3(2), 0, 'black', 'filled')
-scatter3(y4(1), y4(2), 0, 'black', 'filled')
-scatter3(y5(1), y5(2), 0, 'black', 'filled')
+scatter3(y1(1), y1(2), 0, 'filled', 'MarkerFaceColor', 'white', ...
+    'MarkerEdgeColor', 'black', 'LineWidth', 1)
+scatter3(y2(1), y2(2), 0, 'filled', 'MarkerFaceColor', 'white', ...
+    'MarkerEdgeColor', 'black', 'LineWidth', 1)
+scatter3(y3(1), y3(2), 0, 'filled', 'MarkerFaceColor', 'white', ...
+    'MarkerEdgeColor', 'black', 'LineWidth', 1)
+scatter3(y4(1), y4(2), 0, 'filled', 'MarkerFaceColor', 'white', ...
+    'MarkerEdgeColor', 'black', 'LineWidth', 1)
+scatter3(y5(1), y5(2), 0, 'filled', 'MarkerFaceColor', 'white', ...
+    'MarkerEdgeColor', 'black', 'LineWidth', 1)
 hold off
